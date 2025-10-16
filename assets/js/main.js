@@ -6,6 +6,56 @@
 * License: https://bootstrapmade.com/license/
 */
 
+// Add this script to handle the form submission
+document.addEventListener('DOMContentLoaded', function() {
+  const form = document.querySelector('.php-email-form');
+  
+  form.addEventListener('submit', async function(e) {
+    e.preventDefault();
+    
+    // Get form values
+    const name = document.getElementById('name-field').value;
+    const email = document.getElementById('email-field').value;
+    const subject = document.getElementById('subject-field').value;
+    const message = document.getElementById('message-field').value;
+    
+    // Show loading state
+    document.querySelector('.loading').style.display = 'block';
+    document.querySelector('.error-message').style.display = 'none';
+    document.querySelector('.sent-message').style.display = 'none';
+    
+    try {
+      const response = await fetch('https://ismailemailapi.runasp.net/api/SendEmail', {
+        method: 'POST',
+        headers: {
+          'accept': '*/*',
+          'Content-Type': 'application/json',
+          'apikey': 'ES.IKnBtDcM^vlnGo%lzBGNW^8unTupR4q6s3%+y0HcsDSSs0=',
+        },
+        body: JSON.stringify({
+          name: name,
+          email: email,
+          subject: subject,
+          message: message
+        })
+      });
+      
+      document.querySelector('.loading').style.display = 'none';
+      
+      if (response.ok) {
+        document.querySelector('.sent-message').style.display = 'block';
+        form.reset();
+      } else {
+        document.querySelector('.error-message').textContent = 'Failed to send message. Please try again.';
+        document.querySelector('.error-message').style.display = 'block';
+      }
+    } catch (error) {
+      document.querySelector('.loading').style.display = 'none';
+      document.querySelector('.error-message').textContent = 'Error: ' + error.message;
+      document.querySelector('.error-message').style.display = 'block';
+    }
+  });
+});
 
 (function() {
   "use strict";
