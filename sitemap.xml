@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <loc>https://ismailkhandev.vercel.app/</loc>
+  <lastmod>2026-03-11T05:44:28+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://ismailkhandev.vercel.app/assets/docs/resume_ismail.pdf</loc>
+  <lastmod>2026-05-11T05:44:29+00:00</lastmod>
+  <priority>0.90</priority>
+</url>
+<url>
+  <loc>https://ismailkhandev.vercel.app/#hero</loc>
+  <lastmod>2026-03-11T05:42:28+00:00</lastmod>
+  <priority>0.99</priority>
+</url>
+
+<url>
+  <loc>https://ismailkhandev.vercel.app/#about</loc>
+  <lastmod>2026-03-01T05:44:28+00:00</lastmod>
+  <priority>0.84</priority>
+</url>
+<url>
+  <loc>https://ismailkhandev.vercel.app/#resume</loc>
+  <lastmod>2026-03-11T02:44:28+00:00</lastmod>
+  <priority>0.82</priority>
+</url>
+<url>
+  <loc>https://ismailkhandev.vercel.app/#languages-courses</loc>
+  <lastmod>2026-03-11T05:54:28+00:00</lastmod>
+  <priority>0.71</priority>
+</url>
+<url>
+  <loc>https://ismailkhandev.vercel.app/#rewards</loc>
+  <lastmod>2026-03-11T01:44:28+00:00</lastmod>
+  <priority>0.72</priority>
+</url>
+<url>
+  <loc>https://ismailkhandev.vercel.app/#portfolio</loc>
+  <lastmod>2026-03-16T05:42:28+00:00</lastmod>
+  <priority>0.74</priority>
+</url>
+
+<url>
+  <loc>https://ismailkhandev.vercel.app/#services</loc>
+  <lastmod>2026-04-11T01:44:28+00:00</lastmod>
+  <priority>0.85</priority>
+</url>
+<url>
+  <loc>https://ismailkhandev.vercel.app/#contact</loc>
+  <lastmod>2026-03-12T05:40:28+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+
+
+</urlset>
